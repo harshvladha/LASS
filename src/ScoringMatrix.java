@@ -24,11 +24,6 @@ public class ScoringMatrix {
 			System.out.println("File Not FOund!!,\n" + e);
 			
 		}
-		/*
-		for(int i=0;i<128;i++){
-			System.out.println(allCharacters[i]);
-		}
-		*/
 		return;
 		
 	}
