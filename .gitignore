@@ -15,3 +15,9 @@ hs_err_pid*
 .project/
 .project
 /bin/
+
+# intelliJ idea ignores
+/.idea/
+LASS.iml
+
+
