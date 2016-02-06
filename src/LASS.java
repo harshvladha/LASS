@@ -41,12 +41,13 @@ public class LASS {
 		}
 		
 	}
-	private static void ScoreOfEachSeed(String seed){
+	private static double ScoreOfEachSeed(String seed){
         int k=seed.length();
         double score=0;
 		for(int p=0;p<k;p++){
-            score=score+scoringMatrix[(int)seed.chartAt(p)][(int)seed.chartAt(p+1)];
+            score=score+scoringMatrix[(int)seed.charAt(p)][(int)seed.charAt(p+1)];
         }
+        return score;
 	}
 	
 }
