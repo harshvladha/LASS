@@ -13,6 +13,19 @@ public class LASS {
 		 * third argument is file of scoring matrix (args[2)
 		 */
 		ImportScoringMatrix(args[2]);
+		String Seeds[] = new String[args[1].length()-1];
+		Seeds = createSeeds(args[1], 3);
+	}
+	private static String[] createSeeds(String pattern, int seedLength) {
+		String seeds[] = new String[pattern.length()-1];
+		char seed[] = new char[seedLength];
+		for(int i=0;i<pattern.length()-seedLength;i++){
+			for(int j=i;j<seedLength;j++){
+				seed[j-i] = pattern.charAt(j);
+			}
+			seeds[i] = String.copyValueOf(seed);
+		}
+		return seeds;
 	}
 	private static void ImportScoringMatrix(String filename) {
 		try {
