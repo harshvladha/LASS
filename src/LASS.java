@@ -17,7 +17,7 @@ public class LASS {
 		Seeds = createSeeds(args[1], 3);
 	}
 	private static String[] createSeeds(String pattern, int seedLength) {
-		String seeds[] = new String[pattern.length()-1];
+		String seeds[] = new String[pattern.length()-seedLength+1];
 		char seed[] = new char[seedLength];
 		for(int i=0;i<pattern.length()-seedLength;i++){
 			for(int j=i;j<seedLength;j++){
