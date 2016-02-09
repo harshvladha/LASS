@@ -16,8 +16,8 @@ public class ScoringMatrix {
     public static int bigramCountArray[];
     public static void main(String[] args) throws UnsupportedEncodingException, FileNotFoundException {
         HashInput(args[0]);
-        CountBigramFrequencies(10);
-        BigramProbability(10);
+        CountBigramFrequencies(5);
+        BigramProbability(5);
         CountFinalScores();
 
     }
@@ -115,8 +115,8 @@ public class ScoringMatrix {
                 }
             }
             //System.out.println(Arrays.toString(allCharacterCount));
-            //System.out.println(Arrays.deepToString(allCharacterPairCount));
-            PrintWriter writer = new PrintWriter("the-file-name.txt", "UTF-8");
+            //System.out.println(allCharacterPairCount[71][72]);
+            PrintWriter writer = new PrintWriter("Count-of-pairs.txt", "UTF-8");
             writer.println(Arrays.deepToString(allCharacterPairCount));
             //writer.println("The second line");
             writer.close();
