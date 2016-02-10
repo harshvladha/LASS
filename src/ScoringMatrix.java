@@ -12,7 +12,7 @@ public class ScoringMatrix {
 
     public static int allCharacterCount[] = new int[128];
     public static int allCharacterPairCount[][] = new int[128][128];
-    public static int scoringMatrix[][] = new int[128][128];
+    public static float scoringMatrix[][] = new float[128][128];
     public static int bigramCountArray[];
     public static void main(String[] args) throws UnsupportedEncodingException, FileNotFoundException {
         HashInput(args[0]);
@@ -35,6 +35,7 @@ public class ScoringMatrix {
             for(int j=0;j<128;j++){
                 try{
                     scoringMatrix[i][j] = allCharacterPairCount[i][j]/allCharacterCount[i];
+                    System.out.println(scoringMatrix[i][j]);
                 }
                 catch(ArithmeticException e){
                     System.out.println(e);
