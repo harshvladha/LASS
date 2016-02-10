@@ -33,7 +33,12 @@ public class ScoringMatrix {
         }
         for(int i=0;i<128;i++){
             for(int j=0;j<128;j++){
-                scoringMatrix[i][j] = allCharacterPairCount[i][j]/allCharacterCount[i];
+                try{
+                    scoringMatrix[i][j] = allCharacterPairCount[i][j]/allCharacterCount[i];
+                }
+                catch(ArithmeticException e){
+                    System.out.println(e);
+                }
             }
         }
         PrintWriter writer = new PrintWriter("ScoringMatric.txt", "UTF-8");
@@ -50,28 +55,12 @@ public class ScoringMatrix {
         int count, newCount;
         int smoothNumerator1, smoothNumerator2, smoothDenominator;
 
-<<<<<<< HEAD
-	/*
-	* This function is for smoothing.
-	* */
-	private static void CountBigramFrequencies(int countThreshold){
-		bigramCountArray = new int[countThreshold+2]; // +2 for 0 , 1 to k , k+1
-		for(int i=0;i<countThreshold+2;i++){
-			bigramCountArray[i]=0;
-		}
-		for(int i=0;i<128;i++){
-			for(int j=0;j<128;j++){
-				if(allCharacterPairCount[i][j]<countThreshold+2)
-					bigramCountArray[allCharacterPairCount[i][j]]++;
-			}
-        }
 
-	}
-=======
         for(int i=0;i<128;i++){
             for(int j=0;j<128;j++){
                 if(allCharacterPairCount[i][j]<countThreshold){
-                    count = allCharacterPairCount[i][j];
+                    count = allCharacterPairCount[i][j]; //Nc
+
                     smoothNumerator1 = ((count+1)*bigramCountArray[count+1])/bigramCountArray[count];
                     smoothNumerator2 = (count*(countThreshold+1)*bigramCountArray[countThreshold])/bigramCountArray[0];
                     smoothDenominator = 1 - ((countThreshold+1)*bigramCountArray[countThreshold]/bigramCountArray[0]);
@@ -80,7 +69,6 @@ public class ScoringMatrix {
                 }
             }
         }
->>>>>>> 60fb2acba9995823b3a26e09131068762feb2ca0
 
     }
 
