@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class ScoringMatrix {
 
     public static int allCharacterCount[] = new int[128];
-    public static int allCharacterPairCount[][] = new int[128][128];
+    public static float  allCharacterPairCount[][] = new float[128][128];
     public static float scoringMatrix[][] = new float[128][128];
     public static int bigramCountArray[];
     public static void main(String[] args) throws UnsupportedEncodingException, FileNotFoundException {
@@ -35,7 +35,7 @@ public class ScoringMatrix {
             for(int j=0;j<128;j++){
                 try{
                     scoringMatrix[i][j] = allCharacterPairCount[i][j]/allCharacterCount[i];
-                    System.out.println(scoringMatrix[i][j]);
+                    //System.out.println(scoringMatrix[i][j]);
                 }
                 catch(ArithmeticException e){
                     System.out.println(e);
@@ -53,19 +53,21 @@ public class ScoringMatrix {
     private static void BigramProbability(int countThreshold){
 		/*   This for C*
 		* */
-        int count, newCount;
-        int smoothNumerator1, smoothNumerator2, smoothDenominator;
+        int count;
+        float newCount;
+        float smoothNumerator1, smoothNumerator2, smoothDenominator;
 
 
         for(int i=0;i<128;i++){
             for(int j=0;j<128;j++){
                 if(allCharacterPairCount[i][j]<countThreshold){
-                    count = allCharacterPairCount[i][j]; //Nc
+                    count =(int)allCharacterPairCount[i][j]; // c
 
                     smoothNumerator1 = ((count+1)*bigramCountArray[count+1])/bigramCountArray[count];
                     smoothNumerator2 = (count*(countThreshold+1)*bigramCountArray[countThreshold])/bigramCountArray[0];
                     smoothDenominator = 1 - ((countThreshold+1)*bigramCountArray[countThreshold]/bigramCountArray[0]);
                     newCount = (smoothNumerator1 - smoothNumerator2)/smoothDenominator;
+
                     allCharacterPairCount[i][j] = newCount;
                 }
             }
@@ -84,7 +86,7 @@ public class ScoringMatrix {
         for(int i=0;i<128;i++){
             for(int j=0;j<128;j++){
                 if(allCharacterPairCount[i][j]<countThreshold)
-                    bigramCountArray[allCharacterPairCount[i][j]]++;
+                    bigramCountArray[(int)allCharacterPairCount[i][j]]++;
             }
         }
     }
