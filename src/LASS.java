@@ -15,6 +15,7 @@ public class LASS {
 		ImportScoringMatrix(args[2]);
 		String Seeds[] = new String[args[1].length()-1];
 		Seeds = createSeeds(args[1], 3);
+
 	}
 	private static String[] createSeeds(String pattern, int seedLength) {
 		String seeds[] = new String[pattern.length()-seedLength+1];
@@ -49,5 +50,12 @@ public class LASS {
         }
         return score;
 	}
-	
+	private static String leastscoringseeds(String lseed,int threshold){
+		if(ScoreOfEachSeed(lseed)>threshold){
+			return lseed;
+		}
+		else
+			return "";
+	}
+
 }
