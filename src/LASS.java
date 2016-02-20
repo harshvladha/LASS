@@ -57,5 +57,29 @@ public class LASS {
 		else
 			return "";
 	}
+	private static void exactmatchoflss(String filename,String lsseed,double seedscore){
+		try {
+			Scanner scanner = new Scanner(new FileReader(filename));
+			/* build scoring matrix from text file */
+			while (scanner.hasNextLine()) {
+				String columns = scanner.nextLine();
+				int s=lsseed.length();
+				double currentscore=0;
+				int i;
+				for (i=1;i<s;i++)
+				{
+					currentscore=currentscore+scoringMatrix[(int)columns.charAt(i-1)][(int)columns.charAt(i)];
+				}
+				if(currentscore==seedscore){
 
+				}
+				else{
+					currentscore=currentscore-scoringMatrix[(int)columns.charAt(i-s)][(int)columns.charAt(i-s+1)];
+				}
+
+			}
+		} catch (FileNotFoundException e) {
+			System.out.println(e);
+		}
+	}
 }
