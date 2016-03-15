@@ -6,6 +6,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 public class LASS {
 	public static double scoringMatrix[][] = new double[128][128];
+	public static String searchPattern; // pattern which we need to find
 	public static void main(String[] args) throws UnsupportedEncodingException {
 		/*
 		 * first argument is file/database to search in (args[0)
@@ -14,8 +15,8 @@ public class LASS {
 		 */
 		ImportScoringMatrix(args[2]);
 		String Seeds[] = new String[args[1].length()-1];
-		Seeds = createSeeds(args[1], 3);
-
+		searchPattern = args[1];
+		Seeds = createSeeds(searchPattern, 3);
 	}
 	private static String[] createSeeds(String pattern, int seedLength) {
 		String seeds[] = new String[pattern.length()-seedLength+1];
@@ -66,16 +67,22 @@ public class LASS {
 				int s=lsseed.length();
 				double currentscore=0;
 				int i;
-				for (i=1;i<s;i++)
-				{
-					currentscore=currentscore+scoringMatrix[(int)columns.charAt(i-1)][(int)columns.charAt(i)];
-				}
-				if(currentscore==seedscore){
-
-				}
-				else{
-					currentscore=currentscore-scoringMatrix[(int)columns.charAt(i-s)][(int)columns.charAt(i-s+1)];
-				}
+				/*
+				 * seed length traversal should happen for all characters in this line.
+				 */
+					for (i=1;i<s;i++)
+					{
+						currentscore=currentscore+scoringMatrix[(int)columns.charAt(i-1)][(int)columns.charAt(i)];
+					}
+					if(currentscore==seedscore){
+						/* 
+						 * Score matched, now we can extend left and right to make a EXACT match
+						 */
+						
+					}
+					else{
+						currentscore=currentscore-scoringMatrix[(int)columns.charAt(i-s)][(int)columns.charAt(i-s+1)];
+					}
 
 			}
 		} catch (FileNotFoundException e) {
