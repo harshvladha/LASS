@@ -5,7 +5,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.Scanner;
 import java.util.Arrays;
 public class LASS {
-	public static double scoringMatrix[][] = new double[128][128];
+	public static float scoringMatrix[][] = new float[128][128];
 	public static String searchPattern; // pattern which we need to find
 	public static String LSS;
 	public static int LSSPos;
@@ -17,27 +17,39 @@ public class LASS {
 		 * fourth argument is threshold (args[3)
 		 */
 		ImportScoringMatrix(args[2]);
+		/*
+		for(int i=0;i<128;i++){
+			for(int j=0;j<128;j++){
+				System.out.print(scoringMatrix[i][j] + " ");
+			}
+			System.out.println();
+		}
+		*/
 		String Seeds[] = new String[args[1].length()-1];
 		searchPattern = args[1];
 		Seeds = createSeeds(searchPattern, 3);
-		double score = 0;
-		double min_score = 1000000.00;
-		double threshold = Double.parseDouble(args[3]);
+		//System.out.println(Seeds.length);
+		float score = 0;
+		float min_score = 0;
+		float threshold = Float.parseFloat(args[3]);
 		int j = 0;
+		//System.out.println(searchPattern.length());
 		for(int i=0;i<searchPattern.length()-2;i++){
 			score = ScoreOfEachSeed(Seeds[i]);
-			if(score > threshold && score < min_score){
+			System.out.println(Seeds[i] + " score : " + score);
+			if(score > threshold && score > min_score){
 				min_score = score;
 				LSS = Seeds[i];
 				LSSPos = i;
 			}
 		}
+		//System.out.println(LSS + " score : "+ min_score);
 		exactmatchoflss(args[0], LSS, min_score);
 	}
 	private static String[] createSeeds(String pattern, int seedLength) {
 		String seeds[] = new String[pattern.length()-seedLength+1];
 		char seed[] = new char[seedLength];
-		for(int i=0;i<pattern.length()-seedLength;i++){
+		for(int i=0;i<pattern.length()-seedLength+1;i++){
 			for(int j=i;j<i+seedLength;j++){
 				seed[j-i] = pattern.charAt(j);
 			}
@@ -51,7 +63,7 @@ public class LASS {
 			/* build scoring matrix from text file */
 			for(int i=0;i<128;i++){
 				for(int j=0;j<128;j++){
-					scoringMatrix[i][j] = scanner.nextDouble();
+					scoringMatrix[i][j] = scanner.nextFloat();
 				}
 			}
 		} catch (FileNotFoundException e) {
@@ -59,10 +71,10 @@ public class LASS {
 		}
 		
 	}
-	private static double ScoreOfEachSeed(String seed){
+	private static float ScoreOfEachSeed(String seed){
         int k=seed.length();
-        double score=0;
-		for(int p=0;p<k;p++){
+        float score=0;
+		for(int p=0;p<k-1;p++){
             score=score+scoringMatrix[(int)seed.charAt(p)][(int)seed.charAt(p+1)];
         }
         return score;
@@ -76,43 +88,53 @@ public class LASS {
 			return "";
 	}
 	*/
-	private static void exactmatchoflss(String filename, String lsseed, double seedscore){
+	private static void exactmatchoflss(String filename, String lsseed, float seedscore){
 		try {
 			Scanner scanner = new Scanner(new FileReader(filename));
 			/* build scoring matrix from text file */
-			int lineNumber = 0, count = 0;
+			int lineNumber = 0, count = 0, countLSS = 0; 
 			while (scanner.hasNextLine()) {
 				String line = scanner.nextLine();
+				//System.out.println(line);
+
 				lineNumber++;
 				int s=lsseed.length();
 				int L = line.length();				
-				double currentscore=0;
+				float currentscore=0;
 				int i = 0;
 				int j = 1;
+				if(line.length() < s){
+					continue;
+				}
 				/*
 				 * seed length traversal should happen for all characters in this line.
 				 */
-				while(i < L){
+				while(i+j < L){
 					while(j<s)
 					{
 						currentscore=currentscore+scoringMatrix[(int)line.charAt(i+j-1)][(int)line.charAt(i+j)];
+						//System.out.println(currentscore);
 						j++;
 					}
-					if(currentscore==seedscore){
+					if((int)(currentscore*100000)==(int)(seedscore*100000)){
 						/* 
 						 * Score matched, now we can extend left and right to make a EXACT match						 * 
 						 */
+						
+						//System.out.println("LSS found at Line " + lineNumber );
+						countLSS++;
 						boolean foundFlag = true;
-						int k = i+j-s+1;
+						int k = i+j-s;
 						int i1=k, i2=k;
 						int lsspos1 = LSSPos;
 						int lsspos2 = LSSPos;
-						while(lsspos1 > 0 || lsspos2 < searchPattern.length()){
-							if(lsspos1 > 0 && searchPattern.charAt(lsspos1) == line.charAt(i1)){
+						//System.out.println(LSSPos + " " + i + " " + j);
+						while((lsspos1 > 0 || lsspos2 < searchPattern.length()) && (i1 > 0 || i2 > 0)){
+							if((lsspos1 > 0 && searchPattern.charAt(lsspos1) == line.charAt(i1)) && i1 > 0 ){
 								lsspos1--;
 								i1--;
 							}
-							else if(lsspos2 < searchPattern.length() && searchPattern.charAt(lsspos2) == line.charAt(i2)){
+							else if((lsspos2 < searchPattern.length() && searchPattern.charAt(lsspos2) == line.charAt(i2)) && i2 < line.length()){
 								lsspos2++;
 								i2++;
 							}
@@ -122,20 +144,17 @@ public class LASS {
 							}
 						}
 						if(foundFlag == true){
-							System.out.println("Pattern found at "+ (k - i1+1) + "Line : " + lineNumber);
+							System.out.println("Pattern found at index " + (i1+1) +  " of Line : " + lineNumber);
 							count++;
 						}
-						
 					}
-					else{
-						currentscore=currentscore-scoringMatrix[(int)line.charAt(i+j-s)][(int)line.charAt(i+j-s+1)];
-					}
+					currentscore=currentscore-scoringMatrix[(int)line.charAt(i+j-s)][(int)line.charAt(i+j-s+1)];
 					i++;
 					j = s-1;
 				}
 
 			}
-			System.out.println("Total found instances : " + count);
+			System.out.println("Total found instances : " + count + " and LSS = " + countLSS + " LSS is " + LSS);
 		} catch (FileNotFoundException e) {
 			System.out.println(e);
 		}
