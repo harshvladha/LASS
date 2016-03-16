@@ -32,13 +32,13 @@ public class LASS {
 				LSSPos = i;
 			}
 		}
-		exactmatchoflss(args[2], LSS, min_score);
+		exactmatchoflss(args[0], LSS, min_score);
 	}
 	private static String[] createSeeds(String pattern, int seedLength) {
 		String seeds[] = new String[pattern.length()-seedLength+1];
 		char seed[] = new char[seedLength];
 		for(int i=0;i<pattern.length()-seedLength;i++){
-			for(int j=i;j<seedLength;j++){
+			for(int j=i;j<i+seedLength;j++){
 				seed[j-i] = pattern.charAt(j);
 			}
 			seeds[i] = String.copyValueOf(seed);
