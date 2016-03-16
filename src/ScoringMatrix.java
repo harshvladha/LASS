@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 /**
- * Created by Kaancha on 30-01-2016.
+ * Created by FARHAT on 30-01-2016.
  */
 public class ScoringMatrix {
 
@@ -28,22 +28,31 @@ public class ScoringMatrix {
     private static void CountFinalScores() throws FileNotFoundException, UnsupportedEncodingException {
         for(int i=0;i<128;i++){
             for(int j=0;j<128;j++){
-                scoringMatrix[i][j] = 0;
+                scoringMatrix[i][j] = (float)0.00;
             }
         }
         for(int i=0;i<128;i++){
             for(int j=0;j<128;j++){
                 try{
-                    scoringMatrix[i][j] = allCharacterPairCount[i][j]/allCharacterCount[i];
+                    if(allCharacterCount[i]!=0)
+                    scoringMatrix[i][j] = allCharacterPairCount[i][j]/(float)allCharacterCount[i];
+                    //scoringMatrix[i][j] = j;
                     //System.out.println(scoringMatrix[i][j]);
                 }
                 catch(ArithmeticException e){
-                    System.out.println(e);
+                    System.out.println(e.getMessage());
                 }
             }
         }
-        PrintWriter writer = new PrintWriter("ScoringMatric.txt", "UTF-8");
-        writer.println(Arrays.deepToString(scoringMatrix));
+        PrintWriter writer = new PrintWriter("ScoringMatric.txt");
+        //writer.println(Arrays.deepToString(scoringMatrix));
+        for (int i = 0; i < scoringMatrix.length; i++) {
+            for (int j = 0; j < scoringMatrix[0].length; j++) {
+                writer.print(scoringMatrix[i][j] + " ");
+            }
+            writer.println();
+        }
+        writer.close();
 
     }
 
@@ -115,9 +124,16 @@ public class ScoringMatrix {
                 }
             }
             //System.out.println(Arrays.toString(allCharacterCount));
+            //System.out.println(char(25));
             //System.out.println(allCharacterPairCount[71][72]);
-            PrintWriter writer = new PrintWriter("Count-of-pairs.txt", "UTF-8");
-            writer.println(Arrays.deepToString(allCharacterPairCount));
+            PrintWriter writer = new PrintWriter("Count-of-pairs.txt");
+            for (int i = 0; i < allCharacterPairCount.length; i++) {
+                for (int j = 0; j < allCharacterPairCount[0].length; j++) {
+                    writer.print(allCharacterPairCount[i][j] + " ");
+                }
+                writer.println();
+            }
+            //writer.println(Arrays.deepToString(allCharacterPairCount));
             //writer.println("The second line");
             writer.close();
         } catch (FileNotFoundException e) {
