@@ -14,6 +14,7 @@ public class Comparison {
         Scanner scanner = new Scanner(System.in);
         String pattern = scanner.next();
         int pattern_length = pattern.length();
+        System.out.println("LASS Algorithm");
         while(seedLength <= pattern_length){
         	System.out.println();
             try{
@@ -29,7 +30,13 @@ public class Comparison {
             }catch(IOException e){	
                 e.printStackTrace();
             }
-        }
+        }        
+        System.out.println("\nKMP Algorithm");
+        long startTime = System.currentTimeMillis();
+        KnuthMorrisPratt.KMPALGO(pattern);
+        long stopTime = System.currentTimeMillis();
+        long elapsedTime = stopTime - startTime;
+        System.out.printf(format2, pattern, pattern_length, pattern_length, KnuthMorrisPratt.patternFreq, 0, elapsedTime);
 
     }
 }

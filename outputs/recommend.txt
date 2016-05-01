@@ -1,0 +1,6 @@
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+recommend            9                    3                    126                  2746                 1366                
+recommend            9                    4                    126                  678                  739                 
+recommend            9                    5                    126                  151                  413                 
+recommend            9                    6                    126                  156                  295                 
+recommend            9                    7                    126                  156                  307                 

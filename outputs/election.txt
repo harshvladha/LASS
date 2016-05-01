@@ -1,0 +1,7 @@
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+election             8                    3                    182                  6112                 1486                
+election             8                    4                    182                  1090                 631                 
+election             8                    5                    182                  1206                 396                 
+election             8                    6                    182                  247                  270                 
+election             8                    7                    173                  204                  298                 
+election             8                    8                    180                  215                  283                 

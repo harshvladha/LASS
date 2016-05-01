@@ -1,0 +1,7 @@
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+awarding             8                    3                    3                    685                  1183                
+awarding             8                    4                    3                    350                  625                 
+awarding             8                    5                    3                    553                  442                 
+awarding             8                    6                    3                    78                   346                 
+awarding             8                    7                    3                    128                  322                 
+awarding             8                    8                    3                    27                   324                 

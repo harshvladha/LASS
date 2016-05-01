@@ -1,0 +1,6 @@
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+automobile           10                   3                    65                   301                  1173                
+automobile           10                   4                    50                   122                  917                 
+automobile           10                   5                    65                   149                  507                 
+automobile           10                   6                    65                   97                   312                 
+automobile           10                   7                    65                   101                  350                 

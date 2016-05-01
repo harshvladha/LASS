@@ -1,0 +1,4 @@
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+Grand                5                    3                    43                   194                  1223                
+Grand                5                    4                    45                   368                  926                 
+Grand                5                    5                    45                   59                   390                 

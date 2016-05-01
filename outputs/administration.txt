@@ -1,0 +1,9 @@
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+administration       14                   3                    105                  423                  1234                
+administration       14                   4                    105                  411                  1061                
+administration       14                   5                    105                  342                  787                 
+administration       14                   6                    105                  273                  337                 
+administration       14                   7                    105                  277                  312                 
+administration       14                   8                    90                   221                  294                 
+administration       14                   9                    105                  194                  282                 
+administration       14                   10                   105                  197                  298                 

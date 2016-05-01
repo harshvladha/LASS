@@ -1,0 +1,6 @@
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+requirement          11                   3                    105                  612                  1165                
+requirement          11                   4                    105                  136                  1034                
+requirement          11                   5                    105                  122                  415                 
+requirement          11                   6                    105                  133                  340                 
+requirement          11                   7                    105                  191                  307                 

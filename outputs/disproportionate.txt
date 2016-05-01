@@ -1,0 +1,15 @@
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+disproportionate     16                   3                    3                    1606                 1253                
+disproportionate     16                   4                    3                    653                  909                 
+disproportionate     16                   5                    3                    56                   335                 
+disproportionate     16                   6                    3                    10                   327                 
+disproportionate     16                   7                    3                    102                  301                 
+disproportionate     16                   8                    3                    106                  288                 
+disproportionate     16                   9                    3                    113                  283                 
+disproportionate     16                   10                   3                    75                   281                 
+disproportionate     16                   11                   3                    22                   297                 
+disproportionate     16                   12                   3                    17                   310                 
+disproportionate     16                   13                   3                    24                   346                 
+disproportionate     16                   14                   3                    15                   320                 
+disproportionate     16                   15                   3                    20                   293                 
+disproportionate     16                   16                   3                    17                   268                 
