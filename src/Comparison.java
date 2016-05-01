@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.Scanner;
 
 /**
  * Created by PrashantKumarRaj on 4/30/2016.
@@ -6,36 +7,26 @@ import java.io.*;
 public class Comparison {
 
     public static void main(String [] args){
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        for(int i=0;i<5;i++){
+        int seedLength = 3;
+        String format1 = "%-20s %-20s %-20s %-20s %-20s %-20s";
+        String format2 = "%-20s %-20d %-20d %-20d %-20d %-20d";
+        System.out.printf(format1, "Pattern", "Pattern Length", "Seed Length", "Total Found", "Total LSS Found", "Time Taken (ms)");
+        Scanner scanner = new Scanner(System.in);
+        String pattern = scanner.next();
+        int pattern_length = pattern.length();
+        while(seedLength <= pattern_length){
+        	System.out.println();
             try{
-                System.out.println("\nEnter Pattern\n");
-                String Pattern = br.readLine();
-                long patternLength=Pattern.length();
                 long startTime = System.currentTimeMillis();
-                String pos;
-                //pos=KnuthMorrisPratt.KMPALGO(Pattern);
-
-                pos = RabinKarp.patternSearch(Pattern);
+                String[] argsLASS = {"../brown.txt", pattern , "../ScoringMatric.txt", "0.0", Integer.toString(seedLength)};
+                int[] output = new int[2];
+                output = LASS.main(argsLASS);
+                
                 long stopTime = System.currentTimeMillis();
                 long elapsedTime = stopTime - startTime;
-
-
-                File file =new File("Comparison.txt");
-
-                //if file does not exists, then create it
-                if(!file.exists()){
-                    file.createNewFile();
-                }
-
-                //true = append file
-                FileWriter fileWritter = new FileWriter(file.getName(),true);
-                BufferedWriter bufferWritter = new BufferedWriter(fileWritter);
-                String Result=String.format("%-30s%-10d %-40s %10d %10d \n",Pattern,patternLength,pos,RabinKarp.patternFreq,elapsedTime);
-                bufferWritter.write(Result);
-                bufferWritter.close();
-            }catch(IOException e){
+                System.out.printf(format2, pattern, pattern_length, seedLength, output[0], output[1], elapsedTime);
+                seedLength++;
+            }catch(IOException e){	
                 e.printStackTrace();
             }
         }

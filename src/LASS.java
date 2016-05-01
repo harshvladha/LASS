@@ -31,16 +31,17 @@ public class LASS
 	/*
 	 *main function
 	 */
-	public static void main(String[] args) throws UnsupportedEncodingException
+	public static int[] main(String[] args) throws UnsupportedEncodingException
 	{
 		searchPattern = args[1];
 		seedLength = Integer.parseInt(args[4]);
 		ImportScoringMatrix(args[2]);  //scoring matrix import
 		float threshold = Float.parseFloat(args[3]);  //threshold value
+		int[] RETURN = new int[2]; // index 0 = total found instances . index 1 = total LSS found 
 		if(searchPattern.length() < seedLength) //if pattern-length is less than seed-length ERROR !!
 		{
 			System.out.println("ERROR !! : Pattern length is less than seed length.");
-			return;
+			return RETURN;
 		}
 		String Seeds[] = new String[args[1].length()-1];
 		Seeds = createSeeds(searchPattern);
@@ -50,7 +51,7 @@ public class LASS
 		for(int i=0;i<searchPattern.length()-seedLength+1;i++)
 		{
 			score = ScoreOfEachSeed(Seeds[i]);
-			System.out.println(Seeds[i] + " score : " + score); //Score of each seed
+			//System.out.println(Seeds[i] + " score : " + score); //Score of each seed
 			if(score > threshold && score < min_score)  // make => score > min_score for taking HSS
 			{
 				min_score = score;
@@ -58,7 +59,9 @@ public class LASS
 				LSSPos = i;
 			}
 		}
-		exactmatchoflss(args[0], LSS, min_score);  // Exact match of the pattern on both sides of LSS
+		RETURN = exactmatchoflss(args[0], LSS, min_score);  // Exact match of the pattern on both sides of LSS
+		
+		return RETURN;
 	}
 
 	/*
@@ -115,8 +118,9 @@ public class LASS
 	/*
 	 *function for exact matching after comparing LSS score
 	 */
-	private static void exactmatchoflss(String filename, String lsseed, float seedscore)
+	private static int[] exactmatchoflss(String filename, String lsseed, float seedscore)
 	{
+		int output[] = new int[2];
 		try
 		{
 			Scanner scanner = new Scanner(new FileReader(filename));  // scan document for the match
@@ -175,7 +179,7 @@ public class LASS
 						}
 						if(foundFlag == true)
 						{
-							System.out.println("Pattern found at index " + (i1+2) +  " of Line : " + lineNumber);
+							//System.out.println("Pattern found at index " + (i1+2) +  " of Line : " + lineNumber);
 							count++;
 						}
 					}
@@ -184,11 +188,14 @@ public class LASS
 					j = s-1;	
 				}
 			}
-			System.out.println("Total found instances : " + count + " and LSS = " + countLSS + " LSS is " + LSS);
+			//System.out.println("Total found instances : " + count + " and LSS = " + countLSS + " LSS is " + LSS);
+			output[0] = count;
+			output[1] = countLSS;
 		}
 		catch (FileNotFoundException e)
 		{
 		System.out.println(e);
 		}
+		return output;
 	}
 }
