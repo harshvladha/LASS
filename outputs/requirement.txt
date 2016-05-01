@@ -1,6 +1,12 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
-requirement          11                   3                    105                  612                  1165                
-requirement          11                   4                    105                  136                  1034                
-requirement          11                   5                    105                  122                  415                 
-requirement          11                   6                    105                  133                  340                 
-requirement          11                   7                    105                  191                  307                 
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
+requirement          11                   3                    105                  612                  1396                
+requirement          11                   4                    105                  136                  988                 
+requirement          11                   5                    105                  122                  463                 
+requirement          11                   6                    105                  133                  407                 
+requirement          11                   7                    105                  191                  362                 
+requirement          11                   8                    105                  141                  362                 
+requirement          11                   9                    105                  142                  399                 
+requirement          11                   10                   82                   114                  417                 
+requirement          11                   11                   57                   86                   393                 
+KMP Algorithm
+requirement          11                   11                   105                  0                    360                 

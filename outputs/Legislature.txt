@@ -1,0 +1,12 @@
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
+Legislature          11                   3                    28                   1028                 1741                
+Legislature          11                   4                    28                   659                  1037                
+Legislature          11                   5                    28                   165                  523                 
+Legislature          11                   6                    28                   179                  505                 
+Legislature          11                   7                    28                   78                   463                 
+Legislature          11                   8                    28                   54                   490                 
+Legislature          11                   9                    28                   36                   387                 
+Legislature          11                   10                   28                   49                   379                 
+Legislature          11                   11                   28                   51                   340                 
+KMP Algorithm
+Legislature          11                   11                   28                   0                    316                 

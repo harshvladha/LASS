@@ -1,0 +1,9 @@
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
+research             8                    3                    139                  1647                 1682                
+research             8                    4                    139                  285                  678                 
+research             8                    5                    139                  303                  492                 
+research             8                    6                    139                  199                  384                 
+research             8                    7                    139                  190                  370                 
+research             8                    8                    139                  162                  380                 
+KMP Algorithm
+research             8                    8                    139                  0                    328                 

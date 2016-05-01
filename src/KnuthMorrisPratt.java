@@ -42,28 +42,29 @@ public class KnuthMorrisPratt{
         String index="";
         int m = P.length();
         try {
-            FileInputStream fin=new FileInputStream("../brown.txt");
+            //FileInputStream fin=new FileInputStream("../brown.txt");
             Scanner scanner = new Scanner(new FileReader("../brown.txt"));
-            int c=0;
             patternFreq=0;
-            while((c=fin.read())!=-1){
-                if((char)c== P.charAt(j)){
-                    if(j==m-1){
-                        patternFreq++;
-                        index += i-j+",";
-                    }
+            char c;
+            while(scanner.hasNextLine()){
+            	String line = scanner.nextLine();
+            	for(int i1 = 0; i1 < line.length(); i1++){
+            		if(line.charAt(i1) == P.charAt(j)){
+            			if(j==m-1){
+                            patternFreq++;
+                            index += i-j+",";
+                        }
 
-                    else{
-                        i++;
-                        j++;
-                    }
-                }
-                else if(j>0){
-                    j=F[j-1];
-                }
-                else{
-                    i++;
-                }
+                        else{
+                            i++;
+                            j++;
+                        }
+            		}else if(j > 0){
+            			j = F[j-1];
+            		}else{
+            			i++;
+            		}
+            	}
             }
         }
 

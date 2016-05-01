@@ -14,7 +14,7 @@ public class Comparison {
         Scanner scanner = new Scanner(System.in);
         String pattern = scanner.next();
         int pattern_length = pattern.length();
-        System.out.println("LASS Algorithm");
+        System.out.print("LASS Algorithm");
         while(seedLength <= pattern_length){
         	System.out.println();
             try{

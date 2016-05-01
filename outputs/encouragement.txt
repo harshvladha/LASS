@@ -1,15 +1,14 @@
 Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
-
-encouragement        13                   3                    14                   875                  1350                
-encouragement        13                   4                    14                   215                  605                 
-encouragement        13                   5                    14                   96                   455                 
-encouragement        13                   6                    14                   48                   359                 
-encouragement        13                   7                    14                   91                   313                 
-encouragement        13                   8                    14                   154                  312                 
-encouragement        13                   9                    14                   30                   290                 
-encouragement        13                   10                   14                   26                   278                 
-encouragement        13                   11                   14                   54                   292                 
-encouragement        13                   12                   14                   37                   302                 
-encouragement        13                   13                   14                   44                   290                 
+encouragement        13                   3                    14                   875                  1572                
+encouragement        13                   4                    14                   215                  1120                
+encouragement        13                   5                    14                   96                   591                 
+encouragement        13                   6                    14                   48                   446                 
+encouragement        13                   7                    14                   91                   408                 
+encouragement        13                   8                    14                   154                  359                 
+encouragement        13                   9                    14                   30                   331                 
+encouragement        13                   10                   14                   26                   324                 
+encouragement        13                   11                   14                   54                   356                 
+encouragement        13                   12                   14                   37                   341                 
+encouragement        13                   13                   14                   44                   354                 
 KMP Algorithm
-encouragement        13                   13                   0                    0                    3                   
+encouragement        13                   13                   14                   0                    296                 

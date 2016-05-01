@@ -1,5 +1,7 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
-Fulton               6                    3                    19                   210                  1575                
-Fulton               6                    4                    19                   29                   586                 
-Fulton               6                    5                    19                   68                   379                 
-Fulton               6                    6                    19                   25                   290                 
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
+Fulton               6                    3                    19                   210                  2027                
+Fulton               6                    4                    19                   29                   781                 
+Fulton               6                    5                    19                   68                   457                 
+Fulton               6                    6                    19                   25                   409                 
+KMP Algorithm
+Fulton               6                    6                    19                   0                    300                 

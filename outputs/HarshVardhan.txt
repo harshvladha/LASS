@@ -1,0 +1,13 @@
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
+HarshVardhan         12                   3                    0                    6                    1646                
+HarshVardhan         12                   4                    0                    2                    1154                
+HarshVardhan         12                   5                    0                    12                   418                 
+HarshVardhan         12                   6                    0                    55                   539                 
+HarshVardhan         12                   7                    0                    7                    448                 
+HarshVardhan         12                   8                    0                    1                    426                 
+HarshVardhan         12                   9                    0                    3                    354                 
+HarshVardhan         12                   10                   0                    1                    398                 
+HarshVardhan         12                   11                   0                    4                    408                 
+HarshVardhan         12                   12                   0                    7                    405                 
+KMP Algorithm
+HarshVardhan         12                   12                   0                    0                    290                 

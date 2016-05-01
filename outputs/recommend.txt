@@ -1,6 +1,10 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
-recommend            9                    3                    126                  2746                 1366                
-recommend            9                    4                    126                  678                  739                 
-recommend            9                    5                    126                  151                  413                 
-recommend            9                    6                    126                  156                  295                 
-recommend            9                    7                    126                  156                  307                 
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
+recommend            9                    3                    126                  2746                 1569                
+recommend            9                    4                    126                  678                  1015                
+recommend            9                    5                    126                  151                  504                 
+recommend            9                    6                    126                  156                  373                 
+recommend            9                    7                    126                  156                  441                 
+recommend            9                    8                    126                  154                  368                 
+recommend            9                    9                    125                  163                  325                 
+KMP Algorithm
+recommend            9                    9                    126                  0                    236                 

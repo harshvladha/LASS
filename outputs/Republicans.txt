@@ -1,0 +1,12 @@
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
+Republicans          11                   3                    28                   287                  1590                
+Republicans          11                   4                    28                   144                  948                 
+Republicans          11                   5                    28                   150                  431                 
+Republicans          11                   6                    28                   171                  391                 
+Republicans          11                   7                    28                   161                  504                 
+Republicans          11                   8                    28                   131                  377                 
+Republicans          11                   9                    28                   133                  423                 
+Republicans          11                   10                   28                   58                   413                 
+Republicans          11                   11                   27                   45                   436                 
+KMP Algorithm
+Republicans          11                   11                   28                   0                    297                 

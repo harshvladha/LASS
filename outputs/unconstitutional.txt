@@ -1,0 +1,17 @@
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
+unconstitutional     16                   3                    2                    3559                 1341                
+unconstitutional     16                   4                    2                    700                  1030                
+unconstitutional     16                   5                    2                    275                  325                 
+unconstitutional     16                   6                    2                    345                  439                 
+unconstitutional     16                   7                    2                    79                   404                 
+unconstitutional     16                   8                    1                    46                   369                 
+unconstitutional     16                   9                    2                    265                  330                 
+unconstitutional     16                   10                   2                    75                   383                 
+unconstitutional     16                   11                   2                    56                   362                 
+unconstitutional     16                   12                   1                    110                  390                 
+unconstitutional     16                   13                   1                    49                   431                 
+unconstitutional     16                   14                   2                    21                   357                 
+unconstitutional     16                   15                   2                    17                   358                 
+unconstitutional     16                   16                   2                    19                   359                 
+KMP Algorithm
+unconstitutional     16                   16                   2                    0                    329                 
