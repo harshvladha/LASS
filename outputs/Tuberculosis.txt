@@ -1,0 +1,26 @@
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 Tuberculosis         12                   3                    1                    219                  1451                
+LASS                 Tuberculosis         12                   4                    1                    67                   778                 
+LASS                 Tuberculosis         12                   5                    1                    20                   352                 
+LASS                 Tuberculosis         12                   6                    1                    48                   326                 
+LASS                 Tuberculosis         12                   7                    1                    15                   288                 
+LASS                 Tuberculosis         12                   8                    1                    27                   282                 
+LASS                 Tuberculosis         12                   9                    1                    23                   298                 
+LASS                 Tuberculosis         12                   10                   1                    20                   303                 
+LASS                 Tuberculosis         12                   11                   1                    16                   276                 
+LASS                 Tuberculosis         12                   12                   1                    14                   342                 
+
+LASS-H               Tuberculosis         12                   3                    1                    2754                 453                 
+LASS-H               Tuberculosis         12                   4                    1                    47                   385                 
+LASS-H               Tuberculosis         12                   5                    1                    74                   276                 
+LASS-H               Tuberculosis         12                   6                    1                    133                  269                 
+LASS-H               Tuberculosis         12                   7                    1                    52                   255                 
+LASS-H               Tuberculosis         12                   8                    1                    26                   266                 
+LASS-H               Tuberculosis         12                   9                    1                    37                   260                 
+LASS-H               Tuberculosis         12                   10                   1                    111                  249                 
+LASS-H               Tuberculosis         12                   11                   1                    33                   254                 
+LASS-H               Tuberculosis         12                   12                   1                    14                   263                 
+
+KMP                  Tuberculosis         12                   12                   1                    1                    208                 
+
+RK                   Tuberculosis         12                   12                   1                    1                    330                 

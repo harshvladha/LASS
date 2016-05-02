@@ -1,0 +1,20 @@
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 Christian            9                    3                    210                  508                  1060                
+LASS                 Christian            9                    4                    210                  653                  715                 
+LASS                 Christian            9                    5                    210                  452                  336                 
+LASS                 Christian            9                    6                    153                  192                  310                 
+LASS                 Christian            9                    7                    210                  370                  264                 
+LASS                 Christian            9                    8                    210                  232                  296                 
+LASS                 Christian            9                    9                    210                  266                  257                 
+
+LASS-H               Christian            9                    3                    210                  5876                 409                 
+LASS-H               Christian            9                    4                    210                  1990                 470                 
+LASS-H               Christian            9                    5                    210                  217                  269                 
+LASS-H               Christian            9                    6                    210                  240                  293                 
+LASS-H               Christian            9                    7                    210                  291                  254                 
+LASS-H               Christian            9                    8                    210                  266                  249                 
+LASS-H               Christian            9                    9                    210                  266                  249                 
+
+KMP                  Christian            9                    9                    210                  210                  203                 
+
+RK                   Christian            9                    9                    210                  210                  267                 

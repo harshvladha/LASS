@@ -1,12 +1,24 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
-requirement          11                   3                    105                  612                  1396                
-requirement          11                   4                    105                  136                  988                 
-requirement          11                   5                    105                  122                  463                 
-requirement          11                   6                    105                  133                  407                 
-requirement          11                   7                    105                  191                  362                 
-requirement          11                   8                    105                  141                  362                 
-requirement          11                   9                    105                  142                  399                 
-requirement          11                   10                   82                   114                  417                 
-requirement          11                   11                   57                   86                   393                 
-KMP Algorithm
-requirement          11                   11                   105                  0                    360                 
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 requirement          11                   3                    105                  612                  1013                
+LASS                 requirement          11                   4                    105                  136                  647                 
+LASS                 requirement          11                   5                    105                  122                  337                 
+LASS                 requirement          11                   6                    105                  133                  255                 
+LASS                 requirement          11                   7                    105                  191                  310                 
+LASS                 requirement          11                   8                    105                  141                  255                 
+LASS                 requirement          11                   9                    105                  142                  241                 
+LASS                 requirement          11                   10                   82                   114                  251                 
+LASS                 requirement          11                   11                   57                   86                   255                 
+
+LASS-H               requirement          11                   3                    105                  1760                 403                 
+LASS-H               requirement          11                   4                    105                  720                  449                 
+LASS-H               requirement          11                   5                    105                  519                  264                 
+LASS-H               requirement          11                   6                    105                  111                  283                 
+LASS-H               requirement          11                   7                    105                  105                  259                 
+LASS-H               requirement          11                   8                    105                  135                  246                 
+LASS-H               requirement          11                   9                    85                   103                  250                 
+LASS-H               requirement          11                   10                   105                  119                  241                 
+LASS-H               requirement          11                   11                   57                   86                   285                 
+
+KMP                  requirement          11                   11                   105                  105                  250                 
+
+RK                   requirement          11                   11                   105                  105                  292                 

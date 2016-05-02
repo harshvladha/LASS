@@ -1,13 +1,26 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
-HarshVardhan         12                   3                    0                    6                    1646                
-HarshVardhan         12                   4                    0                    2                    1154                
-HarshVardhan         12                   5                    0                    12                   418                 
-HarshVardhan         12                   6                    0                    55                   539                 
-HarshVardhan         12                   7                    0                    7                    448                 
-HarshVardhan         12                   8                    0                    1                    426                 
-HarshVardhan         12                   9                    0                    3                    354                 
-HarshVardhan         12                   10                   0                    1                    398                 
-HarshVardhan         12                   11                   0                    4                    408                 
-HarshVardhan         12                   12                   0                    7                    405                 
-KMP Algorithm
-HarshVardhan         12                   12                   0                    0                    290                 
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 HarshVardhan         12                   3                    0                    6                    1165                
+LASS                 HarshVardhan         12                   4                    0                    2                    759                 
+LASS                 HarshVardhan         12                   5                    0                    12                   294                 
+LASS                 HarshVardhan         12                   6                    0                    55                   340                 
+LASS                 HarshVardhan         12                   7                    0                    7                    301                 
+LASS                 HarshVardhan         12                   8                    0                    1                    277                 
+LASS                 HarshVardhan         12                   9                    0                    3                    265                 
+LASS                 HarshVardhan         12                   10                   0                    1                    272                 
+LASS                 HarshVardhan         12                   11                   0                    4                    255                 
+LASS                 HarshVardhan         12                   12                   0                    7                    265                 
+
+LASS-H               HarshVardhan         12                   3                    0                    4386                 311                 
+LASS-H               HarshVardhan         12                   4                    0                    106                  438                 
+LASS-H               HarshVardhan         12                   5                    0                    80                   299                 
+LASS-H               HarshVardhan         12                   6                    0                    34                   269                 
+LASS-H               HarshVardhan         12                   7                    0                    413                  303                 
+LASS-H               HarshVardhan         12                   8                    0                    62                   257                 
+LASS-H               HarshVardhan         12                   9                    0                    26                   343                 
+LASS-H               HarshVardhan         12                   10                   0                    11                   249                 
+LASS-H               HarshVardhan         12                   11                   0                    12                   262                 
+LASS-H               HarshVardhan         12                   12                   0                    7                    258                 
+
+KMP                  HarshVardhan         12                   12                   0                    0                    189                 
+
+RK                   HarshVardhan         12                   12                   0                    0                    278                 

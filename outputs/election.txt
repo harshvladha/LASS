@@ -1,7 +1,18 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
-election             8                    3                    182                  6112                 1486                
-election             8                    4                    182                  1090                 631                 
-election             8                    5                    182                  1206                 396                 
-election             8                    6                    182                  247                  270                 
-election             8                    7                    173                  204                  298                 
-election             8                    8                    180                  215                  283                 
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 election             8                    3                    182                  6112                 1086                
+LASS                 election             8                    4                    182                  1090                 682                 
+LASS                 election             8                    5                    182                  1206                 303                 
+LASS                 election             8                    6                    182                  247                  347                 
+LASS                 election             8                    7                    173                  204                  330                 
+LASS                 election             8                    8                    180                  215                  283                 
+
+LASS-H               election             8                    3                    182                  21780                344                 
+LASS-H               election             8                    4                    182                  17389                348                 
+LASS-H               election             8                    5                    182                  3168                 288                 
+LASS-H               election             8                    6                    182                  1191                 336                 
+LASS-H               election             8                    7                    182                  392                  264                 
+LASS-H               election             8                    8                    180                  215                  274                 
+
+KMP                  election             8                    8                    180                  180                  228                 
+
+RK                   election             8                    8                    182                  182                  282                 

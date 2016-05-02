@@ -1,10 +1,12 @@
 Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
-LASS                 plain                5                    3                    339                  865                  1119                
-LASS                 plain                5                    4                    339                  360                  887                 
-LASS                 plain                5                    5                    336                  341                  391                 
+LASS                 plain                5                    3                    339                  865                  1096                
+LASS                 plain                5                    4                    339                  360                  583                 
+LASS                 plain                5                    5                    336                  341                  373                 
 
-LASS-H               plain                5                    3                    339                  5644                 545                 
-LASS-H               plain                5                    4                    339                  426                  473                 
-LASS-H               plain                5                    5                    336                  341                  479                 
+LASS-H               plain                5                    3                    339                  5644                 400                 
+LASS-H               plain                5                    4                    339                  426                  423                 
+LASS-H               plain                5                    5                    336                  341                  291                 
 
-KMP                  plain                5                    5                    339                  339                  266                 
+KMP                  plain                5                    5                    339                  339                  209                 
+
+RK                   plain                5                    5                    339                  339                  262                 

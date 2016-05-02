@@ -1,18 +1,20 @@
 Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
-LASS                 financial            9                    3                    89                   2067                 1629                
-LASS                 financial            9                    4                    89                   218                  595                 
-LASS                 financial            9                    5                    86                   104                  478                 
-LASS                 financial            9                    6                    89                   102                  298                 
-LASS                 financial            9                    7                    89                   106                  345                 
-LASS                 financial            9                    8                    89                   192                  315                 
-LASS                 financial            9                    9                    89                   214                  316                 
+LASS                 financial            9                    3                    89                   2067                 1469                
+LASS                 financial            9                    4                    89                   218                  526                 
+LASS                 financial            9                    5                    86                   104                  396                 
+LASS                 financial            9                    6                    89                   102                  308                 
+LASS                 financial            9                    7                    89                   106                  268                 
+LASS                 financial            9                    8                    89                   192                  313                 
+LASS                 financial            9                    9                    89                   214                  256                 
 
-LASS-H               financial            9                    3                    89                   1854                 386                 
-LASS-H               financial            9                    4                    89                   1515                 501                 
-LASS-H               financial            9                    5                    89                   209                  302                 
-LASS-H               financial            9                    6                    89                   217                  289                 
-LASS-H               financial            9                    7                    89                   158                  300                 
-LASS-H               financial            9                    8                    89                   112                  341                 
-LASS-H               financial            9                    9                    89                   214                  354                 
+LASS-H               financial            9                    3                    89                   1854                 316                 
+LASS-H               financial            9                    4                    89                   1515                 487                 
+LASS-H               financial            9                    5                    89                   209                  253                 
+LASS-H               financial            9                    6                    89                   217                  254                 
+LASS-H               financial            9                    7                    89                   158                  258                 
+LASS-H               financial            9                    8                    89                   112                  263                 
+LASS-H               financial            9                    9                    89                   214                  268                 
 
-KMP                  financial            9                    9                    97                   97                   228                 
+KMP                  financial            9                    9                    97                   97                   207                 
+
+RK                   financial            9                    9                    89                   89                   269                 

@@ -1,12 +1,24 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
-Republicans          11                   3                    28                   287                  1590                
-Republicans          11                   4                    28                   144                  948                 
-Republicans          11                   5                    28                   150                  431                 
-Republicans          11                   6                    28                   171                  391                 
-Republicans          11                   7                    28                   161                  504                 
-Republicans          11                   8                    28                   131                  377                 
-Republicans          11                   9                    28                   133                  423                 
-Republicans          11                   10                   28                   58                   413                 
-Republicans          11                   11                   27                   45                   436                 
-KMP Algorithm
-Republicans          11                   11                   28                   0                    297                 
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 Republicans          11                   3                    28                   287                  1183                
+LASS                 Republicans          11                   4                    28                   144                  537                 
+LASS                 Republicans          11                   5                    28                   150                  341                 
+LASS                 Republicans          11                   6                    28                   171                  400                 
+LASS                 Republicans          11                   7                    28                   161                  308                 
+LASS                 Republicans          11                   8                    28                   131                  253                 
+LASS                 Republicans          11                   9                    28                   133                  266                 
+LASS                 Republicans          11                   10                   28                   58                   257                 
+LASS                 Republicans          11                   11                   27                   45                   261                 
+
+LASS-H               Republicans          11                   3                    28                   3716                 368                 
+LASS-H               Republicans          11                   4                    28                   1107                 288                 
+LASS-H               Republicans          11                   5                    28                   168                  261                 
+LASS-H               Republicans          11                   6                    28                   99                   256                 
+LASS-H               Republicans          11                   7                    28                   114                  252                 
+LASS-H               Republicans          11                   8                    28                   171                  254                 
+LASS-H               Republicans          11                   9                    28                   56                   244                 
+LASS-H               Republicans          11                   10                   28                   110                  250                 
+LASS-H               Republicans          11                   11                   27                   45                   253                 
+
+KMP                  Republicans          11                   11                   28                   28                   208                 
+
+RK                   Republicans          11                   11                   28                   28                   272                 

@@ -1,0 +1,22 @@
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 occupation           10                   3                    46                   545                  1045                
+LASS                 occupation           10                   4                    46                   351                  683                 
+LASS                 occupation           10                   5                    46                   143                  296                 
+LASS                 occupation           10                   6                    46                   76                   306                 
+LASS                 occupation           10                   7                    46                   60                   305                 
+LASS                 occupation           10                   8                    33                   45                   267                 
+LASS                 occupation           10                   9                    46                   64                   265                 
+LASS                 occupation           10                   10                   46                   67                   278                 
+
+LASS-H               occupation           10                   3                    46                   1160                 321                 
+LASS-H               occupation           10                   4                    46                   387                  457                 
+LASS-H               occupation           10                   5                    46                   9048                 290                 
+LASS-H               occupation           10                   6                    46                   143                  309                 
+LASS-H               occupation           10                   7                    46                   165                  289                 
+LASS-H               occupation           10                   8                    40                   142                  333                 
+LASS-H               occupation           10                   9                    46                   80                   278                 
+LASS-H               occupation           10                   10                   46                   67                   314                 
+
+KMP                  occupation           10                   10                   46                   46                   220                 
+
+RK                   occupation           10                   10                   46                   46                   278                 

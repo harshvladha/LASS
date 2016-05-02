@@ -1,6 +1,22 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
-automobile           10                   3                    65                   301                  1173                
-automobile           10                   4                    50                   122                  917                 
-automobile           10                   5                    65                   149                  507                 
-automobile           10                   6                    65                   97                   312                 
-automobile           10                   7                    65                   101                  350                 
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 automobile           10                   3                    65                   301                  1094                
+LASS                 automobile           10                   4                    50                   122                  778                 
+LASS                 automobile           10                   5                    65                   149                  344                 
+LASS                 automobile           10                   6                    65                   97                   359                 
+LASS                 automobile           10                   7                    65                   101                  281                 
+LASS                 automobile           10                   8                    65                   73                   305                 
+LASS                 automobile           10                   9                    65                   69                   274                 
+LASS                 automobile           10                   10                   65                   71                   307                 
+
+LASS-H               automobile           10                   3                    65                   365                  496                 
+LASS-H               automobile           10                   4                    65                   221                  303                 
+LASS-H               automobile           10                   5                    65                   120                  280                 
+LASS-H               automobile           10                   6                    65                   108                  293                 
+LASS-H               automobile           10                   7                    65                   97                   262                 
+LASS-H               automobile           10                   8                    65                   109                  260                 
+LASS-H               automobile           10                   9                    65                   92                   255                 
+LASS-H               automobile           10                   10                   65                   71                   258                 
+
+KMP                  automobile           10                   10                   65                   65                   230                 
+
+RK                   automobile           10                   10                   65                   65                   292                 

@@ -1,17 +1,34 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
-unconstitutional     16                   3                    2                    3559                 1341                
-unconstitutional     16                   4                    2                    700                  1030                
-unconstitutional     16                   5                    2                    275                  325                 
-unconstitutional     16                   6                    2                    345                  439                 
-unconstitutional     16                   7                    2                    79                   404                 
-unconstitutional     16                   8                    1                    46                   369                 
-unconstitutional     16                   9                    2                    265                  330                 
-unconstitutional     16                   10                   2                    75                   383                 
-unconstitutional     16                   11                   2                    56                   362                 
-unconstitutional     16                   12                   1                    110                  390                 
-unconstitutional     16                   13                   1                    49                   431                 
-unconstitutional     16                   14                   2                    21                   357                 
-unconstitutional     16                   15                   2                    17                   358                 
-unconstitutional     16                   16                   2                    19                   359                 
-KMP Algorithm
-unconstitutional     16                   16                   2                    0                    329                 
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 unconstitutional     16                   3                    2                    3559                 1148                
+LASS                 unconstitutional     16                   4                    2                    700                  711                 
+LASS                 unconstitutional     16                   5                    2                    275                  400                 
+LASS                 unconstitutional     16                   6                    2                    345                  308                 
+LASS                 unconstitutional     16                   7                    2                    79                   265                 
+LASS                 unconstitutional     16                   8                    1                    46                   309                 
+LASS                 unconstitutional     16                   9                    2                    265                  251                 
+LASS                 unconstitutional     16                   10                   2                    75                   249                 
+LASS                 unconstitutional     16                   11                   2                    56                   257                 
+LASS                 unconstitutional     16                   12                   1                    110                  259                 
+LASS                 unconstitutional     16                   13                   1                    49                   247                 
+LASS                 unconstitutional     16                   14                   2                    21                   277                 
+LASS                 unconstitutional     16                   15                   2                    17                   239                 
+LASS                 unconstitutional     16                   16                   2                    19                   280                 
+
+LASS-H               unconstitutional     16                   3                    2                    8256                 369                 
+LASS-H               unconstitutional     16                   4                    2                    1905                 408                 
+LASS-H               unconstitutional     16                   5                    2                    489                  249                 
+LASS-H               unconstitutional     16                   6                    2                    139                  248                 
+LASS-H               unconstitutional     16                   7                    2                    171                  245                 
+LASS-H               unconstitutional     16                   8                    2                    246                  244                 
+LASS-H               unconstitutional     16                   9                    2                    41                   251                 
+LASS-H               unconstitutional     16                   10                   2                    97                   244                 
+LASS-H               unconstitutional     16                   11                   2                    83                   257                 
+LASS-H               unconstitutional     16                   12                   2                    68                   245                 
+LASS-H               unconstitutional     16                   13                   2                    22                   247                 
+LASS-H               unconstitutional     16                   14                   2                    19                   250                 
+LASS-H               unconstitutional     16                   15                   2                    24                   252                 
+LASS-H               unconstitutional     16                   16                   2                    19                   254                 
+
+KMP                  unconstitutional     16                   16                   2                    2                    215                 
+
+RK                   unconstitutional     16                   16                   2                    2                    270                 

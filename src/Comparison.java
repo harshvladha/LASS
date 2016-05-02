@@ -14,6 +14,7 @@ public class Comparison {
         Scanner scanner = new Scanner(System.in);
         String pattern = scanner.next();
         int pattern_length = pattern.length();
+        /* LASS with LSS */
         while(seedLength <= pattern_length){
         	System.out.println();
             try{
@@ -29,7 +30,8 @@ public class Comparison {
             }catch(IOException e){	
                 e.printStackTrace();
             }
-        }        
+        }
+        /* LASS with HSS */
         System.out.println();
         seedLength = 3;
         while(seedLength <= pattern_length){
@@ -47,13 +49,26 @@ public class Comparison {
             }catch(IOException e){	
                 e.printStackTrace();
             }
-        }        
+        }
+        /* KMP */
         System.out.println("\n");
         long startTime = System.currentTimeMillis();
         KnuthMorrisPratt.KMPALGO(pattern);
         long stopTime = System.currentTimeMillis();
         long elapsedTime = stopTime - startTime;
         System.out.printf(format2, new String("KMP") ,pattern, pattern_length, pattern_length, KnuthMorrisPratt.patternFreq, KnuthMorrisPratt.patternFreq, elapsedTime);
-
+        
+        /* Rabin Karp */
+        System.out.println("\n");
+        startTime = System.currentTimeMillis();
+        try {
+			RabinKarp.patternSearch(pattern);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			//e.printStackTrace();
+		}
+        stopTime = System.currentTimeMillis();
+        elapsedTime = stopTime - startTime;
+        System.out.printf(format2, new String("RK") ,pattern, pattern_length, pattern_length, RabinKarp.patternFreq, RabinKarp.patternFreq, elapsedTime);
     }
 }

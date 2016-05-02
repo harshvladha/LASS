@@ -1,7 +1,18 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
-awarding             8                    3                    3                    685                  1183                
-awarding             8                    4                    3                    350                  625                 
-awarding             8                    5                    3                    553                  442                 
-awarding             8                    6                    3                    78                   346                 
-awarding             8                    7                    3                    128                  322                 
-awarding             8                    8                    3                    27                   324                 
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 awarding             8                    3                    3                    685                  1088                
+LASS                 awarding             8                    4                    3                    350                  605                 
+LASS                 awarding             8                    5                    3                    553                  381                 
+LASS                 awarding             8                    6                    3                    78                   307                 
+LASS                 awarding             8                    7                    3                    128                  288                 
+LASS                 awarding             8                    8                    3                    27                   252                 
+
+LASS-H               awarding             8                    3                    3                    30193                371                 
+LASS-H               awarding             8                    4                    3                    2807                 417                 
+LASS-H               awarding             8                    5                    3                    333                  343                 
+LASS-H               awarding             8                    6                    3                    47                   295                 
+LASS-H               awarding             8                    7                    3                    31                   259                 
+LASS-H               awarding             8                    8                    3                    27                   250                 
+
+KMP                  awarding             8                    8                    3                    3                    209                 
+
+RK                   awarding             8                    8                    3                    3                    268                 

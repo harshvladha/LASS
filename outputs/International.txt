@@ -1,0 +1,28 @@
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 International        13                   3                    30                   537                  1577                
+LASS                 International        13                   4                    37                   477                  572                 
+LASS                 International        13                   5                    37                   427                  355                 
+LASS                 International        13                   6                    37                   210                  271                 
+LASS                 International        13                   7                    37                   178                  266                 
+LASS                 International        13                   8                    37                   198                  267                 
+LASS                 International        13                   9                    37                   194                  258                 
+LASS                 International        13                   10                   37                   191                  269                 
+LASS                 International        13                   11                   37                   175                  257                 
+LASS                 International        13                   12                   37                   188                  278                 
+LASS                 International        13                   13                   37                   60                   255                 
+
+LASS-H               International        13                   3                    37                   165                  358                 
+LASS-H               International        13                   4                    37                   144                  440                 
+LASS-H               International        13                   5                    37                   238                  306                 
+LASS-H               International        13                   6                    37                   57                   261                 
+LASS-H               International        13                   7                    37                   967                  386                 
+LASS-H               International        13                   8                    37                   76                   278                 
+LASS-H               International        13                   9                    37                   60                   257                 
+LASS-H               International        13                   10                   37                   82                   295                 
+LASS-H               International        13                   11                   37                   62                   264                 
+LASS-H               International        13                   12                   37                   52                   263                 
+LASS-H               International        13                   13                   37                   60                   249                 
+
+KMP                  International        13                   13                   37                   37                   217                 
+
+RK                   International        13                   13                   37                   37                   280                 

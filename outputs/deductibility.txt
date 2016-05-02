@@ -1,0 +1,28 @@
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 deductibility        13                   3                    1                    543                  1081                
+LASS                 deductibility        13                   4                    1                    352                  662                 
+LASS                 deductibility        13                   5                    1                    32                   342                 
+LASS                 deductibility        13                   6                    1                    23                   322                 
+LASS                 deductibility        13                   7                    1                    12                   277                 
+LASS                 deductibility        13                   8                    1                    1                    257                 
+LASS                 deductibility        13                   9                    1                    9                    252                 
+LASS                 deductibility        13                   10                   1                    13                   252                 
+LASS                 deductibility        13                   11                   1                    3                    261                 
+LASS                 deductibility        13                   12                   1                    2                    260                 
+LASS                 deductibility        13                   13                   1                    9                    250                 
+
+LASS-H               deductibility        13                   3                    1                    3693                 430                 
+LASS-H               deductibility        13                   4                    1                    921                  285                 
+LASS-H               deductibility        13                   5                    1                    856                  262                 
+LASS-H               deductibility        13                   6                    1                    80                   261                 
+LASS-H               deductibility        13                   7                    1                    39                   266                 
+LASS-H               deductibility        13                   8                    1                    12                   264                 
+LASS-H               deductibility        13                   9                    1                    18                   267                 
+LASS-H               deductibility        13                   10                   1                    9                    256                 
+LASS-H               deductibility        13                   11                   1                    12                   256                 
+LASS-H               deductibility        13                   12                   1                    11                   255                 
+LASS-H               deductibility        13                   13                   1                    9                    252                 
+
+KMP                  deductibility        13                   13                   1                    1                    219                 
+
+RK                   deductibility        13                   13                   1                    1                    288                 

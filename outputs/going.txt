@@ -1,4 +1,12 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
-going                5                    3                    437                  460                  1216                
-going                5                    4                    437                  524                  890                 
-going                5                    5                    437                  526                  487                 
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 going                5                    3                    437                  460                  1650                
+LASS                 going                5                    4                    437                  524                  825                 
+LASS                 going                5                    5                    437                  526                  367                 
+
+LASS-H               going                5                    3                    437                  30193                434                 
+LASS-H               going                5                    4                    437                  624                  407                 
+LASS-H               going                5                    5                    437                  526                  303                 
+
+KMP                  going                5                    5                    437                  437                  239                 
+
+RK                   going                5                    5                    437                  437                  279                 

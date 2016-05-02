@@ -1,10 +1,12 @@
 Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
-LASS                 Grand                5                    3                    43                   194                  1221                
-LASS                 Grand                5                    4                    45                   368                  972                 
-LASS                 Grand                5                    5                    45                   59                   348                 
+LASS                 Grand                5                    3                    43                   194                  1074                
+LASS                 Grand                5                    4                    45                   368                  692                 
+LASS                 Grand                5                    5                    45                   59                   341                 
 
-LASS-H               Grand                5                    3                    45                   32905                566                 
-LASS-H               Grand                5                    4                    40                   71                   522                 
-LASS-H               Grand                5                    5                    45                   59                   330                 
+LASS-H               Grand                5                    3                    45                   32905                528                 
+LASS-H               Grand                5                    4                    40                   71                   429                 
+LASS-H               Grand                5                    5                    45                   59                   281                 
 
-KMP                  Grand                5                    5                    45                   45                   259                 
+KMP                  Grand                5                    5                    45                   45                   200                 
+
+RK                   Grand                5                    5                    45                   45                   282                 

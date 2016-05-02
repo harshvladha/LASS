@@ -1,10 +1,20 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
-recommend            9                    3                    126                  2746                 1569                
-recommend            9                    4                    126                  678                  1015                
-recommend            9                    5                    126                  151                  504                 
-recommend            9                    6                    126                  156                  373                 
-recommend            9                    7                    126                  156                  441                 
-recommend            9                    8                    126                  154                  368                 
-recommend            9                    9                    125                  163                  325                 
-KMP Algorithm
-recommend            9                    9                    126                  0                    236                 
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 recommend            9                    3                    126                  2746                 1075                
+LASS                 recommend            9                    4                    126                  678                  484                 
+LASS                 recommend            9                    5                    126                  151                  320                 
+LASS                 recommend            9                    6                    126                  156                  290                 
+LASS                 recommend            9                    7                    126                  156                  276                 
+LASS                 recommend            9                    8                    126                  154                  261                 
+LASS                 recommend            9                    9                    125                  163                  253                 
+
+LASS-H               recommend            9                    3                    126                  8040                 468                 
+LASS-H               recommend            9                    4                    126                  259                  346                 
+LASS-H               recommend            9                    5                    126                  384                  274                 
+LASS-H               recommend            9                    6                    126                  283                  259                 
+LASS-H               recommend            9                    7                    126                  185                  295                 
+LASS-H               recommend            9                    8                    126                  177                  268                 
+LASS-H               recommend            9                    9                    125                  163                  259                 
+
+KMP                  recommend            9                    9                    126                  126                  212                 
+
+RK                   recommend            9                    9                    126                  126                  271                 

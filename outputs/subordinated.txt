@@ -1,24 +1,26 @@
 Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
-LASS                 subordinated         12                   3                    4                    2023                 1537                
-LASS                 subordinated         12                   4                    4                    25                   648                 
-LASS                 subordinated         12                   5                    4                    34                   674                 
-LASS                 subordinated         12                   6                    4                    63                   316                 
-LASS                 subordinated         12                   7                    2                    35                   302                 
-LASS                 subordinated         12                   8                    4                    65                   298                 
-LASS                 subordinated         12                   9                    4                    43                   280                 
-LASS                 subordinated         12                   10                   4                    45                   313                 
-LASS                 subordinated         12                   11                   4                    41                   287                 
-LASS                 subordinated         12                   12                   4                    24                   330                 
+LASS                 subordinated         12                   3                    4                    2023                 1211                
+LASS                 subordinated         12                   4                    4                    25                   711                 
+LASS                 subordinated         12                   5                    4                    34                   418                 
+LASS                 subordinated         12                   6                    4                    63                   303                 
+LASS                 subordinated         12                   7                    2                    35                   249                 
+LASS                 subordinated         12                   8                    4                    65                   260                 
+LASS                 subordinated         12                   9                    4                    43                   261                 
+LASS                 subordinated         12                   10                   4                    45                   263                 
+LASS                 subordinated         12                   11                   4                    41                   288                 
+LASS                 subordinated         12                   12                   4                    24                   251                 
 
-LASS-H               subordinated         12                   3                    4                    3323                 465                 
-LASS-H               subordinated         12                   4                    4                    890                  397                 
-LASS-H               subordinated         12                   5                    4                    306                  285                 
-LASS-H               subordinated         12                   6                    4                    159                  334                 
-LASS-H               subordinated         12                   7                    4                    51                   334                 
-LASS-H               subordinated         12                   8                    4                    60                   331                 
-LASS-H               subordinated         12                   9                    4                    70                   338                 
-LASS-H               subordinated         12                   10                   4                    82                   310                 
-LASS-H               subordinated         12                   11                   4                    34                   294                 
-LASS-H               subordinated         12                   12                   4                    24                   302                 
+LASS-H               subordinated         12                   3                    4                    3323                 382                 
+LASS-H               subordinated         12                   4                    4                    890                  368                 
+LASS-H               subordinated         12                   5                    4                    306                  250                 
+LASS-H               subordinated         12                   6                    4                    159                  248                 
+LASS-H               subordinated         12                   7                    4                    51                   248                 
+LASS-H               subordinated         12                   8                    4                    60                   255                 
+LASS-H               subordinated         12                   9                    4                    70                   249                 
+LASS-H               subordinated         12                   10                   4                    82                   251                 
+LASS-H               subordinated         12                   11                   4                    34                   251                 
+LASS-H               subordinated         12                   12                   4                    24                   244                 
 
-KMP                  subordinated         12                   12                   4                    4                    274                 
+KMP                  subordinated         12                   12                   4                    4                    209                 
+
+RK                   subordinated         12                   12                   4                    4                    313                 

@@ -1,7 +1,14 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
-Fulton               6                    3                    19                   210                  2027                
-Fulton               6                    4                    19                   29                   781                 
-Fulton               6                    5                    19                   68                   457                 
-Fulton               6                    6                    19                   25                   409                 
-KMP Algorithm
-Fulton               6                    6                    19                   0                    300                 
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 Fulton               6                    3                    19                   210                  1430                
+LASS                 Fulton               6                    4                    19                   29                   571                 
+LASS                 Fulton               6                    5                    19                   68                   365                 
+LASS                 Fulton               6                    6                    19                   25                   264                 
+
+LASS-H               Fulton               6                    3                    19                   1610                 456                 
+LASS-H               Fulton               6                    4                    19                   444                  343                 
+LASS-H               Fulton               6                    5                    19                   170                  253                 
+LASS-H               Fulton               6                    6                    19                   25                   271                 
+
+KMP                  Fulton               6                    6                    19                   19                   201                 
+
+RK                   Fulton               6                    6                    19                   19                   260                 

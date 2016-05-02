@@ -1,10 +1,20 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
-committee            9                    3                    105                  2746                 1396                
-committee            9                    4                    105                  251                  745                 
-committee            9                    5                    105                  250                  474                 
-committee            9                    6                    105                  259                  449                 
-committee            9                    7                    105                  224                  298                 
-committee            9                    8                    105                  207                  414                 
-committee            9                    9                    105                  124                  354                 
-KMP Algorithm
-committee            9                    9                    105                  0                    273                 
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 committee            9                    3                    105                  2746                 1036                
+LASS                 committee            9                    4                    105                  251                  476                 
+LASS                 committee            9                    5                    105                  250                  336                 
+LASS                 committee            9                    6                    105                  259                  280                 
+LASS                 committee            9                    7                    105                  224                  268                 
+LASS                 committee            9                    8                    105                  207                  282                 
+LASS                 committee            9                    9                    105                  124                  275                 
+
+LASS-H               committee            9                    3                    105                  6178                 542                 
+LASS-H               committee            9                    4                    104                  1572                 593                 
+LASS-H               committee            9                    5                    105                  320                  258                 
+LASS-H               committee            9                    6                    105                  212                  256                 
+LASS-H               committee            9                    7                    105                  280                  257                 
+LASS-H               committee            9                    8                    105                  175                  248                 
+LASS-H               committee            9                    9                    105                  124                  257                 
+
+KMP                  committee            9                    9                    105                  105                  205                 
+
+RK                   committee            9                    9                    105                  105                  258                 

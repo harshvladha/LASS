@@ -1,0 +1,22 @@
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 Government           10                   3                    167                  533                  1375                
+LASS                 Government           10                   4                    167                  540                  546                 
+LASS                 Government           10                   5                    167                  608                  341                 
+LASS                 Government           10                   6                    79                   323                  256                 
+LASS                 Government           10                   7                    167                  549                  320                 
+LASS                 Government           10                   8                    166                  538                  258                 
+LASS                 Government           10                   9                    167                  542                  252                 
+LASS                 Government           10                   10                   167                  206                  253                 
+
+LASS-H               Government           10                   3                    167                  9679                 367                 
+LASS-H               Government           10                   4                    167                  206                  410                 
+LASS-H               Government           10                   5                    167                  213                  254                 
+LASS-H               Government           10                   6                    167                  529                  256                 
+LASS-H               Government           10                   7                    167                  539                  263                 
+LASS-H               Government           10                   8                    167                  206                  269                 
+LASS-H               Government           10                   9                    167                  217                  271                 
+LASS-H               Government           10                   10                   167                  206                  272                 
+
+KMP                  Government           10                   10                   167                  167                  210                 
+
+RK                   Government           10                   10                   167                  167                  283                 
