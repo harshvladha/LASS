@@ -37,7 +37,7 @@ public class KnuthMorrisPratt{
     }
 
     public static String KMPALGO(String P){
-        int i=0,j=0;
+        int i,j;
         prefixTable(P);
         String index="";
         int m = P.length();
@@ -47,6 +47,7 @@ public class KnuthMorrisPratt{
             patternFreq=0;
             char c;
             while(scanner.hasNextLine()){
+            	i = 0; j = 0;
             	String line = scanner.nextLine();
             	for(int i1 = 0; i1 < line.length(); i1++){
             		if(line.charAt(i1) == P.charAt(j)){

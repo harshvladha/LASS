@@ -1,4 +1,10 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
-Grand                5                    3                    43                   194                  1223                
-Grand                5                    4                    45                   368                  926                 
-Grand                5                    5                    45                   59                   390                 
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 Grand                5                    3                    43                   194                  1221                
+LASS                 Grand                5                    4                    45                   368                  972                 
+LASS                 Grand                5                    5                    45                   59                   348                 
+
+LASS-H               Grand                5                    3                    45                   32905                566                 
+LASS-H               Grand                5                    4                    40                   71                   522                 
+LASS-H               Grand                5                    5                    45                   59                   330                 
+
+KMP                  Grand                5                    5                    45                   45                   259                 

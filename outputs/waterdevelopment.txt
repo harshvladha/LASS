@@ -1,0 +1,16 @@
+Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
+waterevelopment      15                   3                    4                    395                  1583                
+waterevelopment      15                   4                    4                    526                  831                 
+waterevelopment      15                   5                    4                    392                  408                 
+waterevelopment      15                   6                    4                    395                  364                 
+waterevelopment      15                   7                    4                    417                  514                 
+waterevelopment      15                   8                    4                    441                  410                 
+waterevelopment      15                   9                    4                    415                  403                 
+waterevelopment      15                   10                   4                    439                  354                 
+waterevelopment      15                   11                   4                    32                   411                 
+waterevelopment      15                   12                   3                    53                   386                 
+waterevelopment      15                   13                   4                    60                   391                 
+waterevelopment      15                   14                   4                    39                   361                 
+waterevelopment      15                   15                   4                    30                   375                 
+KMP Algorithm
+waterevelopment      15                   15                   4                    0                    284                 

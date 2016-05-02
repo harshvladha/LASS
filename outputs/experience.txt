@@ -1,0 +1,20 @@
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 experience           10                   3                    388                  3075                 1374                
+LASS                 experience           10                   4                    388                  919                  541                 
+LASS                 experience           10                   5                    388                  404                  460                 
+LASS                 experience           10                   6                    388                  448                  333                 
+LASS                 experience           10                   7                    388                  456                  338                 
+LASS                 experience           10                   8                    388                  421                  271                 
+LASS                 experience           10                   9                    388                  441                  317                 
+LASS                 experience           10                   10                   388                  430                  302                 
+
+LASS-H               experience           10                   3                    388                  1356                 424                 
+LASS-H               experience           10                   4                    388                  684                  573                 
+LASS-H               experience           10                   5                    388                  611                  308                 
+LASS-H               experience           10                   6                    388                  415                  281                 
+LASS-H               experience           10                   7                    387                  453                  309                 
+LASS-H               experience           10                   8                    388                  430                  287                 
+LASS-H               experience           10                   9                    388                  440                  287                 
+LASS-H               experience           10                   10                   388                  430                  303                 
+
+KMP                  experience           10                   10                   388                  388                  254                 

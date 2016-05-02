@@ -1,9 +1,28 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
-administration       14                   3                    105                  423                  1234                
-administration       14                   4                    105                  411                  1061                
-administration       14                   5                    105                  342                  787                 
-administration       14                   6                    105                  273                  337                 
-administration       14                   7                    105                  277                  312                 
-administration       14                   8                    90                   221                  294                 
-administration       14                   9                    105                  194                  282                 
-administration       14                   10                   105                  197                  298                 
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 administration       14                   3                    105                  423                  1253                
+LASS                 administration       14                   4                    105                  411                  950                 
+LASS                 administration       14                   5                    105                  342                  708                 
+LASS                 administration       14                   6                    105                  273                  359                 
+LASS                 administration       14                   7                    105                  277                  283                 
+LASS                 administration       14                   8                    90                   221                  275                 
+LASS                 administration       14                   9                    105                  194                  278                 
+LASS                 administration       14                   10                   105                  197                  295                 
+LASS                 administration       14                   11                   105                  195                  308                 
+LASS                 administration       14                   12                   105                  178                  289                 
+LASS                 administration       14                   13                   104                  118                  283                 
+LASS                 administration       14                   14                   104                  116                  275                 
+
+LASS-H               administration       14                   3                    105                  3696                 361                 
+LASS-H               administration       14                   4                    105                  588                  407                 
+LASS-H               administration       14                   5                    105                  417                  350                 
+LASS-H               administration       14                   6                    105                  375                  373                 
+LASS-H               administration       14                   7                    105                  278                  336                 
+LASS-H               administration       14                   8                    105                  266                  310                 
+LASS-H               administration       14                   9                    105                  298                  279                 
+LASS-H               administration       14                   10                   101                  246                  294                 
+LASS-H               administration       14                   11                   105                  206                  318                 
+LASS-H               administration       14                   12                   105                  208                  282                 
+LASS-H               administration       14                   13                   105                  191                  267                 
+LASS-H               administration       14                   14                   104                  116                  302                 
+
+KMP                  administration       14                   14                   105                  105                  295                 

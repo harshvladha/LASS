@@ -1,17 +1,32 @@
-Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     LASS Algorithm
-disproportionate     16                   3                    3                    1606                 1485                
-disproportionate     16                   4                    3                    653                  798                 
-disproportionate     16                   5                    3                    56                   499                 
-disproportionate     16                   6                    3                    10                   825                 
-disproportionate     16                   7                    3                    102                  817                 
-disproportionate     16                   8                    3                    106                  390                 
-disproportionate     16                   9                    3                    113                  382                 
-disproportionate     16                   10                   3                    75                   357                 
-disproportionate     16                   11                   3                    22                   392                 
-disproportionate     16                   12                   3                    17                   381                 
-disproportionate     16                   13                   3                    24                   312                 
-disproportionate     16                   14                   3                    15                   326                 
-disproportionate     16                   15                   3                    20                   327                 
-disproportionate     16                   16                   3                    17                   341                 
-KMP Algorithm
-disproportionate     16                   16                   3                    0                    462                 
+Algorithm            Pattern              Pattern Length       Seed Length          Total Found          Total LSS Found      Time Taken (ms)     
+LASS                 disproportionate     16                   3                    3                    1606                 1165                
+LASS                 disproportionate     16                   4                    3                    653                  756                 
+LASS                 disproportionate     16                   5                    3                    56                   383                 
+LASS                 disproportionate     16                   6                    3                    10                   409                 
+LASS                 disproportionate     16                   7                    3                    102                  295                 
+LASS                 disproportionate     16                   8                    3                    106                  324                 
+LASS                 disproportionate     16                   9                    3                    113                  297                 
+LASS                 disproportionate     16                   10                   3                    75                   300                 
+LASS                 disproportionate     16                   11                   3                    22                   325                 
+LASS                 disproportionate     16                   12                   3                    17                   324                 
+LASS                 disproportionate     16                   13                   3                    24                   307                 
+LASS                 disproportionate     16                   14                   3                    15                   314                 
+LASS                 disproportionate     16                   15                   3                    20                   281                 
+LASS                 disproportionate     16                   16                   3                    17                   292                 
+
+LASS-H               disproportionate     16                   3                    3                    2494                 416                 
+LASS-H               disproportionate     16                   4                    3                    17389                621                 
+LASS-H               disproportionate     16                   5                    3                    108                  291                 
+LASS-H               disproportionate     16                   6                    3                    100                  286                 
+LASS-H               disproportionate     16                   7                    3                    197                  280                 
+LASS-H               disproportionate     16                   8                    3                    168                  282                 
+LASS-H               disproportionate     16                   9                    3                    111                  310                 
+LASS-H               disproportionate     16                   10                   3                    51                   330                 
+LASS-H               disproportionate     16                   11                   3                    72                   277                 
+LASS-H               disproportionate     16                   12                   3                    44                   293                 
+LASS-H               disproportionate     16                   13                   3                    49                   325                 
+LASS-H               disproportionate     16                   14                   3                    20                   316                 
+LASS-H               disproportionate     16                   15                   3                    24                   276                 
+LASS-H               disproportionate     16                   16                   3                    17                   329                 
+
+KMP                  disproportionate     16                   16                   3                    3                    244                 
